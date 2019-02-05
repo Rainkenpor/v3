@@ -8,7 +8,7 @@
 			</div> -->
 			<div class="col-2 col-lg-2 " style="padding:0">
 				<a class="navbar-brand" href="<?php echo base_url(); ?>">
-					<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" height="60px" alt="">
+					<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-.png" height="60px" alt="">
 				</a>
 			</div>
 			<div id="datetime" style="position:absolute;top:5px;right:10px;float:right;text-align:right">
@@ -40,16 +40,16 @@ setInterval(function(){
 	hour = ((hour<10)?'0'+hour:hour);
 	minutes = ((minutes<10)?'0'+minutes:minutes);
 
-	$('#datetime #hour').html(hour + ':' + minutes);	
-	
+	$('#datetime #hour').html(hour + ':' + minutes);
 
-	let options = {  
+
+	let options = {
 		year: 'numeric',
 		month: 'short',
 		day: 'numeric',
 	};
 
-	$('#datetime #date').html(d.toLocaleString('es-gt', options)); 
+	$('#datetime #date').html(d.toLocaleString('es-gt', options));
 
 }, 1000);
 
