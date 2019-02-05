@@ -9,6 +9,11 @@
 			<!--</div>-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="navbar-brand" href="<?php echo base_url(); ?>">
+						<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" height="60px" alt="">
+					</a>
+				</li>
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#">Quienes somos <span class="sr-only">(current)</span></a>
 	      </li>
@@ -18,11 +23,6 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Servicios</a>
 	      </li>
-				<li class="nav-item">
-					<a class="navbar-brand" href="<?php echo base_url(); ?>">
-						<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" height="60px" alt="">
-					</a>
-				</li>
 				<li class="nav-item">
 	        <a class="nav-link" href="#">Portafolio</a>
 	      </li>
