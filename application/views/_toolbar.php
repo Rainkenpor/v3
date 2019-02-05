@@ -1,20 +1,45 @@
 <nav id="nav-menu-logo-social" class="navbar navbar-expand-lg light">
 	<div class="container-fluid">
 		<div class="row align-items-center">
-			<!-- <div class="col-3 hidden-lg">
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".main-menu-collapse"
-				 aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation"><span class="icon-bar"></span><span
-					 class="icon-bar"></span><span class="icon-bar"></span></button>
-			</div> -->
-			<div class="col-2 col-lg-2 " style="padding:0">
-				<a class="navbar-brand" href="<?php echo base_url(); ?>">
-					<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-.png" height="60px" alt="">
-				</a>
-			</div>
-			<div id="datetime" style="position:absolute;top:5px;right:10px;float:right;text-align:right">
-				<div style="font-size:20px;" id="hour"></div>
-				<div id="date" style="margin-top:-7px"></div>
-			</div>
+			<!--<div class="col-3 hidden-lg">-->
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="icon-bar"></span><span
+					 class="icon-bar"></span><span class="icon-bar"></span>
+				 </button>
+			<!--</div>-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Quienes somos <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Nuestro modelo</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Servicios</a>
+	      </li>
+				<li class="nav-item">
+					<a class="navbar-brand" href="<?php echo base_url(); ?>">
+						<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" height="60px" alt="">
+					</a>
+				</li>
+				<li class="nav-item">
+	        <a class="nav-link" href="#">Portafolio</a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" href="#">Casos de éxito</a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link" href="#">Contacto</a>
+	      </li>
+	    </ul>
+			<ul>
+				<li id="datetime">
+					<div style="font-size:20px;" id="hour"></div>
+					<div id="date" style="margin-top:-7px"></div>
+				</li>
+			</ul>
+	  </div>
 			<!-- <div class="col-lg-5  collapse navbar-collapse main-menu-collapse justify-content-lg-end">
                 			<div class="d-inline-block inline-group navbar-text">
                     			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd"></path></svg></a>
@@ -31,8 +56,9 @@
 	</div>
 </nav>
 
+<!-- Inicio función fecha y hora -->
 <script>
-setInterval(function(){
+	setInterval(function(){
 	var d = new Date();
 	var hour = d.getHours();
 	var minutes = d.getMinutes();
@@ -54,3 +80,4 @@ setInterval(function(){
 }, 1000);
 
 </script>
+<!-- Final Fecha y Hora -->
