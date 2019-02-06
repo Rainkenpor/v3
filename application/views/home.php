@@ -75,7 +75,7 @@
 					<div class="gallery-item gallery-style-5 text-center padding-x2" >
 						<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')">
 						<div style="width:100%;height:300px;overflow:hidden">
-							<img :src="'<?php echo base_url(); ?>source/images/blog/'+blog.cover+'.jpg'" alt="" style="margin-top: -10%; width:100%;min-height:110%">
+							<img :src="'<?php echo base_url(); ?>source/images/blog/'+blog.cover+'.jpg'" alt="" style="margin-top: -9%; width:100%;min-height:110%">
 						</div>
 						</a>
 						<div class="item-title">
@@ -91,12 +91,12 @@
 			<div class="bg"></div>
 		</div>
 	</section>
-	<section id="subscribe-field" class="text-center pt-30 pb-30 light">
+	<section id="subscribe-field" class="subscribe-field text-center pt-75 pb-75">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-11 col-lg-9 ml-auto mr-auto">
 					<div class="" style="text-align:center">
-						<h3 class="">Consultoría en Negocios Digitales</h3>
+						<h1>Consultoría en Negocios Digitales</h1>
 						<br>
 					</div>
 

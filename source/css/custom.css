@@ -353,6 +353,16 @@ section.dark, footer.dark, header.dark {
 .light .text-secondary.dark, .dark .text-secondary, .light .dark .text-secondary, .text-secondary.dark, .light .breadcrumb-item.dark + .breadcrumb-item::before, .dark .breadcrumb-item + .breadcrumb-item::before, .light .dark .breadcrumb-item + .breadcrumb-item::before, .breadcrumb-item.dark + .breadcrumb-item::before, .light .breadcrumb-item.active.dark, .dark .breadcrumb-item.active, .light .dark .breadcrumb-item.active, .breadcrumb-item.active.dark {
 	color: rgba(255,255,255,0.5);
 }
+
+.subscribe-field{
+	background-color: rgb(0, 170, 75);
+	color:#fff;
+}
+
+#team-2col-2 .bg {
+    background: #f2f2f2;
+}
+
 /* end default */
 @media all and (max-width: 1279px) {
 	.dark h1.light, .light h1, .dark .light h1, h1.light {
