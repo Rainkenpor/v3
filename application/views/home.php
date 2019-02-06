@@ -101,7 +101,7 @@
 					</div>
 
 
-					<div  style="background-color:#00aa4b; margin:auto;overflow: hidden;  width:100%; max-width: 700px; padding:10px; border-radius:20px; ">
+					<div>
 						<form action="">
 							<div style="padding:10px" v-for="(question,index) in questions" class="animated fadeInUp" v-if="index==question_index">
 	                            <!-- {{question}} -->
