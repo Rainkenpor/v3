@@ -180,17 +180,20 @@
 					<div class="row">
 
 	                    <div class="col-sm-4" v-for="blog in blogs_body()">
-							<div class="gallery-item gallery-style-1 padding-x2 mb-50 border">
+							<div class="gallery-item gallery-style-1 px-2">
 								<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')">
 									<img class="item-img" :src="'<?php echo base_url(); ?>source/images/blog/'+blog.cover+'.jpg'" alt="image">
 								</a>
-								<div class="item-title" style="height:220px;overflow:hidden;text-align:justify">
-									<h4  style="text-align:left" class=""><strong >{{blog.title}}</strong></h4>
+								<div class="item-title " style="height:220px;overflow:hidden;text-align:justify">
+									<h4  style="text-align:left" class="">
+                    <strong >{{blog.title}}</strong>
+                  </h4>
 									<p class="text-secondary small">{{blog.created}} | {{blog.author}}</p>
 
 									<p v-html="blog.description">
 									</p>
 								</div>
+                <br>
 								<a href="./blog/info/no-importa-quien-lo-invente-lo-que-importa-es-cuanto-impacta" style="float:right;padding-right:30px;margin-bottom:10px;margin-top:5px">Seguir leyendo</a>
 							</div>
 						</div>

@@ -4,7 +4,7 @@
 		    <ul class="navbar-nav m-auto text-center">
 					<li class="nav-item">
 						<a class="navbar-brand" href="<?php echo base_url(); ?>">
-							<img src="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" height="60px" alt="">
+							<img class="img-responsive" src="<?php echo base_url(); ?>source/images/digital-age.png" height="60px" alt="">
 						</a>
 					</li>
 		      <li class="nav-item custom-menu">

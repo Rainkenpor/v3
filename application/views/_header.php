@@ -3,13 +3,13 @@ $this->load->helper('url');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Digital Age</title>
+	<title>Digital Age | Soluciones Estratégicas Digitales</title>
 
-	<link rel="icon" href="<?php echo base_url(); ?>source/images/favicon.png" type="image/png">
+	<link rel="icon" href="<?php echo base_url(); ?>source/images/digital-age-fav.png" type="image/png">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
