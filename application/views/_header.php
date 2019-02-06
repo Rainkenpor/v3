@@ -9,7 +9,7 @@ $this->load->helper('url');
 	<meta charset="UTF-8">
 	<title>Digital Age</title>
 
-	<link rel="icon" href="<?php echo base_url(); ?>source/images/Logo_Digital_Age_Final-01.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="<?php echo base_url(); ?>source/images/favicon.png" type="image/png">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
