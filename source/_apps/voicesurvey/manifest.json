@@ -1,0 +1,37 @@
+{
+  "name": "VoiceSurvey",
+  "short_name": "Voice Survey",
+  "description": "Digital Age App",
+  "start_url": "/voicesurvey/restaurant?utm=homescreen",
+  "display": "standalone",
+  "scope": "/voicesurvey/restaurant",
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3",
+  "lang":"es-GT",
+  "icons": [{
+      "src": "../../_apps/voicesurvey/icon/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "../../_apps/voicesurvey/icon/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "../../_apps/voicesurvey/icon/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "../../_apps/voicesurvey/icon/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "../../_apps/voicesurvey/icon/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "../../_apps/voicesurvey/icon/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

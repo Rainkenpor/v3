@@ -1,5 +1,5 @@
 <section id="desc-text-halfbg-5" class="pt-50  pb-md-150 spr-edit-el spr-oc-show spr-wout">
-    <div class="container">
+    <div class="container" id="app">
 
         <div class="row justify-content-md-center">
             <div class="col-md-10" style="text-align:center">
@@ -18,7 +18,19 @@
             </div>
         </div>
     </div>
-    <div class="bg-wrap">
-        <div class="bg"></div>
-    </div>
+   
 </section>
+
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            blog:[]
+        },
+        methods: {
+        },
+        mounted() {
+        }
+    })
+</script>

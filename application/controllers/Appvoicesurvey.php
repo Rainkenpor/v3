@@ -72,8 +72,8 @@ class Appvoicesurvey extends CI_Controller {
 			$temp_question= $value['question_id'];
 		}
 
-		$this->load->view('_header');
-		$this->load->view('_toolbar');
+		// $this->load->view('_header');
+		// $this->load->view('_toolbar');
 		$this->load->view('voicesurvey/index',array('list'=>json_encode($arr_)));
 		$this->load->view('_footer');
 	}
