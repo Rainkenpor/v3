@@ -363,8 +363,20 @@ section.dark, footer.dark, header.dark {
     background: #f2f2f2;
 }
 
-iframe .jss119 .jss12{
-	background: #232122 !important;
+.m-auto {
+    margin: auto !important;
+}
+
+div#hour {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+ul.datetime.navbar-nav {
+    float: right;
+    height: 10px;
+    top: -42px;
+    position: relative;
 }
 
 /* end default */
@@ -382,7 +394,17 @@ iframe .jss119 .jss12{
 	font-size: 40px;
 	}
 }
+
+@media all and (min-width:576px){
+	li.custom-menu{
+		display:none;
+	}
+}
+
 @media all and (max-width: 576px) {
+	ul.datetime {
+    display: none;
+  }
 	.dark h1.light, .light h1, .dark .light h1, h1.light {
 	font-size: 40px;
 	}
