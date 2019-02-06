@@ -96,7 +96,7 @@
 			<div class="row">
 				<div class="col-md-11 col-lg-9 ml-auto mr-auto">
 					<div class="" style="text-align:center">
-						<h1>Consultoría en Negocios Digitales</h1>
+						<h2>Consultoría en Negocios Digitales</h2>
 						<br>
 					</div>
 

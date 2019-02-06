@@ -363,6 +363,10 @@ section.dark, footer.dark, header.dark {
     background: #f2f2f2;
 }
 
+iframe .jss119 .jss12{
+	background: #232122 !important;
+}
+
 /* end default */
 @media all and (max-width: 1279px) {
 	.dark h1.light, .light h1, .dark .light h1, h1.light {

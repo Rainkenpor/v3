@@ -21,7 +21,7 @@
 	        <a class="nav-link" href="#">Nuestro modelo</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Servicios</a>
+	        <a class="nav-link" href="#benefits-4col-counter-2">Servicios</a>
 	      </li>
 				<li class="nav-item">
 	        <a class="nav-link" href="#">Portafolio</a>
