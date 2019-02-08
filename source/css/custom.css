@@ -376,8 +376,8 @@ div#hour {
 
 ul.datetime.navbar-nav {
     float: right;
-    height: 10px;
-    top: -42px;
+    height: 0px;
+    top: -50px;
     position: relative;
 }
 
@@ -399,14 +399,14 @@ ul.datetime.navbar-nav {
 	}
 }
 
-@media all and (min-width:576px){
+/*@media all and (min-width:576px){
 	li.custom-menu{
 		display:none;
 	}
-}
+}*/
 
 @media all and (max-width: 576px) {
-	ul.datetime {
+	#datetime {
     display: none;
   }
 	.dark h1.light, .light h1, .dark .light h1, h1.light {

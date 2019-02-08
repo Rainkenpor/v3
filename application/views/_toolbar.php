@@ -1,25 +1,25 @@
 <nav id="nav-menu-logo-social" class="navbar navbar-expand-sm light">
 	<div class="container-fluid">
 			<div class="navbar-collapse">
-		    <ul class="navbar-nav m-auto text-center">
+		    <ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="navbar-brand" href="<?php echo base_url(); ?>">
-							<img class="img-responsive" src="<?php echo base_url(); ?>source/images/digital-age.png" height="60px" alt="">
+							<img src="<?php echo base_url(); ?>source/images/digital-age.png" height="60px" alt="">
 						</a>
 					</li>
-		      <li class="nav-item custom-menu">
-		        <a class="nav-link" href="#subscribe-field">Consultoría</a>
-		      </li>
-		      <li class="nav-item custom-menu">
+		      <!--<li class="nav-item custom-menu">
 		        <a class="nav-link" href="#">Inscríbete</a>
-		      </li>
+		      </li>-->
 		    </ul>
 	  	</div>
 			<ul class="datetime navbar-nav">
-				<li id="datetime" class="nav-item">
+				<li class="nav-item">
+					<a class="nav-link" href="#subscribe-field">Solicita tu Consultoría</a>
+				</li>
+				<!--<li id="datetime" class="nav-item">
 					<div id="hour"></div>
 					<div id="date"></div>
-				</li>
+				</li>-->
 			</ul>
 	</div>
 </nav>
