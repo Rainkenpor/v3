@@ -74,6 +74,7 @@ $route['consulting/get'] = 'consulting/get_questions';
 $route['consulting_save']['POST'] = 'consulting/save';
 
 $route['blog/info/(:any)'] = 'blog/index/$1';
+$route['blog/info/get_multi_blog/(:any)'] = 'blog/get_multi_blog/$1';
 $route['blog']['POST'] = 'blog/save';
 $route['blog/get'] = 'blog/get';
 $route['blog/get_all'] = 'blog/get_all';

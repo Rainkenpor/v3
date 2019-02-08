@@ -15,14 +15,24 @@ class Blog extends CI_Controller {
 	{
 		$this->load->view('_header');
 		$this->load->view('_toolbar');
-		$data = $this->db->query("select
-									a.*
-								from
-									blog a
-								where
-									alias='$alias'");
-		$this->load->view('blog',$data->result_array()[0]);
+		$this->load->view('blog',array('alias'=>$alias));
 		$this->load->view('_footer');
+	}
+
+	public function get_multi_blog($alias){
+		$data = $this->db->query("select
+										d.*,
+										c.tag,
+										DATE_FORMAT(d.date_created,'%d/%m/%Y %H:%i') created
+									from
+										blog a
+										left join blog_tag b on a.blog_id= b.blog_id
+										left join blog_tag c on b.tag=c.tag
+										inner join blog d on c.blog_id = d.blog_id and d.active=1
+									where
+										a.alias='$alias'
+									order by if(d.alias= '$alias',1,0) desc,date_created desc");
+		echo json_encode($data->result_array());
 	}
 
 
