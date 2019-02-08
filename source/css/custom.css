@@ -377,7 +377,8 @@ div#hour {
 ul.datetime.navbar-nav {
     float: right;
     height: 0px;
-    top: -50px;
+    top: -55px;
+		margin-right: 35px;
     position: relative;
 }
 
@@ -406,6 +407,14 @@ ul.datetime.navbar-nav {
 }*/
 
 @media all and (max-width: 576px) {
+	ul.datetime.navbar-nav {
+	    top: -64px;
+	}
+
+	.navbar .container-fluid {
+    height: 60px;
+	}
+
 	#datetime {
     display: none;
   }

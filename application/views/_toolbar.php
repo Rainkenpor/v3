@@ -14,7 +14,7 @@
 	  	</div>
 			<ul class="datetime navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#subscribe-field">Solicita tu Consultoría</a>
+					<a class="nav-link" href="#subscribe-field"><i class="fas fa-headset" style="color:#00aa4b; font-size:16px;"></i> Solicita tu Consultoría</a>
 				</li>
 				<!--<li id="datetime" class="nav-item">
 					<div id="hour"></div>
