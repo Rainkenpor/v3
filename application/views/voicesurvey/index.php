@@ -14,6 +14,15 @@ $this->load->helper('url');
 	<link rel="icon" href="<?php echo base_url(); ?>source/images/favicon.png" type="image/png">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134564299-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134564299-1');
+	</script>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/fonts.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.weber.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/fx.css" />
