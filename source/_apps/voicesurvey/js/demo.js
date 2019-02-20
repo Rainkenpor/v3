@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2016, Codrops
  * http://www.codrops.com
  */
@@ -32,7 +32,7 @@
 	var isIOS = isIOSSafari(),
 		clickHandler = isIOS || isTouch() ? 'touchstart' : 'mousedown',
 		clickHandler2 = isIOS || isTouch() ? 'touchend' : 'mouseup';
-		
+
 
 	function extend(a, b) {
 		for (var key in b) {
@@ -64,12 +64,12 @@
 			interval = setInterval(function () {
 				self.timeline.replay();
 			}, 1500);
-			document.querySelector('.icon-mic').style.color = '#F44336';
+			document.querySelector('.img-mic').style.color = '#F44336';
 		});
 		this.el.addEventListener(clickHandler2, function () {
 			clearInterval(interval);
 			self.options.onUnCheck();
-			document.querySelector('.icon-mic').style.color = '#607D8B';
+			document.querySelector('.img-mic').style.color = '#607D8B';
 		})
 	}
 
@@ -92,7 +92,7 @@
 
 		/* Icon 11 */
 		var el11 = document.querySelector('.icobutton'),
-			el11span = el11.querySelector('span');
+			el11span = el11.querySelector('img');
 		var opacityCurve11 = mojs.easing.path('M0,0 C0,87 27,100 40,100 L40,0 L100,0');
 		var scaleCurve11 = mojs.easing.path('M0,0c0,80,39.2,100,39.2,100L40-100c0,0-0.7,106,60,106');
 		new Animocon(el11, {
@@ -142,12 +142,12 @@
 						el11span.style.WebkitTransform = el11span.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
 
 						var colorProgress = opacityCurve11(progress);
-						// document.querySelector('.icon-mic').style.color = colorProgress >= 1 ? '#E87171' : '#607D8B';
+						// document.querySelector('.img-mic').style.color = colorProgress >= 1 ? '#E87171' : '#607D8B';
 					}
 				})
 			],
 			onUnCheck: function () {
-				document.querySelector('.icon-mic').style.color = '#607D8B';
+				document.querySelector('.img-mic').style.color = '#607D8B';
 			}
 		});
 		/* Icon 11 */

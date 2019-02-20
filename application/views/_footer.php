@@ -1,4 +1,4 @@
-<footer id="footer-twitter-img" class="pt-75 pb-30" style="background-color:#232122">
+<footer id="footer" class="pt-75 pb-30" style="background-color:#232122">
 
 	<div class="container">
 

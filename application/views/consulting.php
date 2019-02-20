@@ -57,6 +57,9 @@
 
 				<div id="app" style="background-color:#00aa4b; margin:auto;overflow: hidden;  width:100%; max-width: 700px; padding:10px; border-radius:20px; ">
 					<form action="">
+
+						<div id="recaptcha" class="g-recaptcha" ></div>
+
 						<div style="padding:10px" v-for="(question,index) in questions" class="animated fadeInUp" v-if="index==question_index">
                             <!-- {{question}} -->
 							<label>{{question.question}}</label>
@@ -134,9 +137,28 @@ var app = new Vue({
         questions:[]
     },
     methods: {
+    	initReCaptcha: function() {
+	        var self = this;
+	        setTimeout(function() {
+	            if(typeof grecaptcha === 'undefined') {
+	                self.initReCaptcha();
+	            }
+	            else {
+	                grecaptcha.render('recaptcha', {
+	                    'sitekey': '6LcUWJAUAAAAAHe2y38p2usNCKTeIXDaNfZElq0C',
+	                    'size': 'invisible',
+	                    'callback': self.save
+	                });
+	            }
+	        }, 2000);
+	    },
+
+	    validate(){
+	    	grecaptcha.execute();
+	    },
         next_option() {
             this.question_index ++
-            if (this.questions.length-1==this.question_index) this.save()
+            if (this.questions.length-1==this.question_index) this.validate()
         },
         preview_option() {
             this.mySwiper.slidePrev()
@@ -200,6 +222,7 @@ var app = new Vue({
         })
         this.mySwiper.allowTouchMove = false;
         this.get_questions()
+        this.initReCaptcha()
     }
 })
 </script>

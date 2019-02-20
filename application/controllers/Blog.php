@@ -21,14 +21,17 @@ class Blog extends CI_Controller {
 
 	public function get_multi_blog($alias){
 		$data = $this->db->query("select
+										distinct
 										d.*,
-										c.tag,
+										e.title tag,
+										e.color,
 										DATE_FORMAT(d.date_created,'%d/%m/%Y %H:%i') created
 									from
 										blog a
 										left join blog_tag b on a.blog_id= b.blog_id
 										left join blog_tag c on b.tag=c.tag
 										inner join blog d on c.blog_id = d.blog_id and d.active=1
+										inner join blog_tag_list e on c.tag = e.tag_id
 									where
 										a.alias='$alias'
 									order by if(d.alias= '$alias',1,0) desc,date_created desc");
@@ -89,7 +92,7 @@ class Blog extends CI_Controller {
 
 	public function save(){
 		$arr = $this->input->post();
-		$arr_tags = explode(',',$arr['tags']);
+
 
 
 		// var_dump($arr);
@@ -152,10 +155,8 @@ class Blog extends CI_Controller {
 		}
 
 		$this->db->delete('blog_tag',array('blog_id'=> $blog_id));
-		if (count($arr_tags)>0){
-			foreach ($arr_tags as $key => $value) {
-				$this->db->insert('blog_tag',array('blog_id' => $blog_id , 'tag'=>$value ));
-			}
+		if ($_POST['tags']>0){
+				$this->db->insert('blog_tag',array('blog_id' => $blog_id , 'tag'=>$_POST['tags'] ));
 		}
 
 

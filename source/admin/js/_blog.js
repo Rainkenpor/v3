@@ -8,13 +8,26 @@ $(function() {
 			question_index:0, //indica la pregunta a visualizar
 			items:[],
 			editor:null,
-			tagg:null,
+			tags:1,
+			tags_list:[
+				{
+					id:1,
+					tag: 'Transformación Digital'
+				},
+				{
+					id:2,
+					tag: 'Innovación'
+				},
+				{
+					id:3,
+					tag: 'Startups'
+				}
+			],
 			blog_id:null,
-
+			tagg:null,
 			title:'',
 			alias:'',
 			blog_type:1,
-			tags:'',
 			blog_iframe:'',
 			autor:''
 		},
@@ -49,9 +62,8 @@ $(function() {
 				this.alias = ''
 				$('#uploadimage').val('');
 				this.blog_type = 1
-				this.tags=''
+				this.tags=0
 				this.blog_iframe=''
-				this.tagg.tagging( "removeAll" );
 				this.autor =''
 			},
 			save(){
@@ -61,7 +73,7 @@ $(function() {
 				var priority = $('#priority').prop('checked');
 				var title = this.title;
 
-				this.tags = this.tagg.tagging( "getTags" ).join(',')
+				// this.tags = this.tagg.tagging( "getTags" ).join(',')
 
 				var formData = new FormData();
 				formData.append('title', title);
@@ -120,11 +132,11 @@ $(function() {
 				this.alias = item.alias;
 				this.blog_type = item.blog_type;
 				this.blog_id = item.blog_id;
-				this.tags = item.tags_;
+				this.tags = ((item.tags[0])?item.tags[0].tag:0);
 				this.blog_iframe = item.blog_iframe;
 				this.autor = item.author;
 // console.log(item.tags)
-				this.tagg.tagging( "add" ,item.tags.map(data=>{return data.tag}))
+				// this.tagg.tagging( "add" ,item.tags.map(data=>{return data.tag}))
 			},
 			remove(item){
 				let el = this
@@ -174,8 +186,9 @@ $(function() {
 				}
 			});
 
-			let t = $('#tags').tagging();
-			this.tagg = t[0]
+			// let t = $('#tags').tagging();
+			// this.tagg = t[0]
+			// this.tagg.tagging( "add", ["tag 1", "tag 2"] );
 
 			this.editor = CKEDITOR.replace('textarea');
 
