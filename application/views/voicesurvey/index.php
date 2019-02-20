@@ -14,6 +14,15 @@ $this->load->helper('url');
 	<link rel="icon" href="<?php echo base_url(); ?>source/images/favicon.png" type="image/png">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134564299-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134564299-1');
+	</script>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/fonts.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/bootstrap.weber.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>source/css/fx.css" />
@@ -111,7 +120,7 @@ body{
 
 <body class="light-page">
 
-	<nav id="nav-menu-logo-social" class="navbar navbar-expand-sm light">
+	<!--<nav id="nav-menu-logo-social" class="navbar navbar-expand-sm light">
 		<div class="container-fluid">
 			<div class="navbar-collapse">
 				<ul class="navbar-nav m-auto text-center">
@@ -134,6 +143,31 @@ body{
 					<div id="date"></div>
 				</li>
 			</ul>
+		</div>
+	</nav>-->
+	<nav id="nav-menu-logo-social" class="navbar navbar-expand-sm light">
+		<div class="container-fluid">
+				<div class="navbar-collapse">
+			    <ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="navbar-brand" href="<?php echo base_url(); ?>">
+								<img src="<?php echo base_url(); ?>source/images/digital-age.png" height="60px" alt="">
+							</a>
+						</li>
+			      <!--<li class="nav-item custom-menu">
+			        <a class="nav-link" href="#">Inscríbete</a>
+			      </li>-->
+			    </ul>
+		  	</div>
+				<ul class="datetime navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="<?php echo base_url(); ?>#subscribe-field" style="color:#737373;"><i class="fas fa-headset" style="color:#00aa4b; font-size:16px;"></i> Solicita tu Consultoría</a>
+					</li>
+					<!--<li id="datetime" class="nav-item">
+						<div id="hour"></div>
+						<div id="date"></div>
+					</li>-->
+				</ul>
 		</div>
 	</nav>
 
