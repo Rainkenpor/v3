@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /source/images
+Allow: /source/images/
