@@ -104,7 +104,7 @@ aria-hidden="true">
 
 					<div>
 						<form action="" method="POST">
-							
+
 							<!-- captcha -->
 							<div id="recaptcha" class="g-recaptcha" ></div>
 
@@ -193,8 +193,8 @@ aria-hidden="true">
 									<strong >{{blog.title}}</strong>
 								</h4>
 								<p class="text-secondary small">{{blog.created}} | {{blog.author}}</p>
-								<p v-html="blog.small_description" style=" overflow:hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">
-								</p>
+								<!--<p v-html="blog.small_description" style="overflow:hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;"></p>-->
+								<p v-html="blog.small_description"></p>
 							</div>
 							<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')" style="float:right;margin-bottom:10px;margin-top:5px">Seguir leyendo</a>
 						</div>
