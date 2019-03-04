@@ -188,15 +188,15 @@ aria-hidden="true">
 							<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')">
 								<img class="item-img" :src="'<?php echo base_url(); ?>source/images/blog/'+blog.cover+'.jpg'" alt="image">
 							</a>
-							<div class="item-title " style="height:220px;overflow:hidden;text-align:justify">
+							<div class="item-title " style="height:220px;overflow:hidden;text-align:left">
 								<h4  style="text-align:left" class="">
 									<strong >{{blog.title}}</strong>
 								</h4>
 								<p class="text-secondary small">{{blog.created}} | {{blog.author}}</p>
 								<!--<p v-html="blog.small_description" style="overflow:hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;"></p>-->
-								<p v-html="blog.small_description"></p>
+								<p class="blog-desc" v-html="blog.small_description"></p>
 							</div>
-							<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')" style="float:right;margin-bottom:10px;margin-top:5px">Seguir leyendo</a>
+							<a :href="((blog.blog_type==1)?'./blog/info/'+blog.alias:'#')" v-on:click="((blog.blog_type==2)?show_modal(blog.blog_iframe):'')" style="float:right;margin-bottom:10px;margin-top:20px">Seguir leyendo</a>
 						</div>
 					</div>
 				</div>

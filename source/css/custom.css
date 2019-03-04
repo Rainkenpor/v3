@@ -356,6 +356,10 @@ section.dark, footer.dark, header.dark {
 
 /* Custom CSS */
 
+p.blog-desc {
+    line-height: 20px;
+}
+
 .subscribe-field{
 	background-color: rgb(0, 170, 75);
 	color:#fff;
