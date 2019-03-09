@@ -62,6 +62,7 @@ $route['voicesurvey']['POST'] = 'Appvoicesurvey/save';
 $route['training'] = 'training/index';
 
 $route['digital-media'] = 'digitalmedia/index';
+$route['transformacion-digital'] = 'transformaciondigital';
 
 $route['digital-technology'] = 'digitaltechnology/index';
 
