@@ -90,7 +90,7 @@
         <div class="card-body text-center">
           <h5 class="card-title mb-0"><strong>Diego de León</strong></h5>
 					<br>
-          <div class="card-text text-black-50">Especialista en estrategia digital, emprendimiento y ventas. SE cenra en el desarrollo, la expasión y la detección de problemas.</div>
+          <div class="card-text text-black-50">Especialista en estrategia digital, emprendimiento y ventas. Se centra en el desarrollo, la expasión y la detección de problemas.</div>
         </div>
       </div>
     </div>
