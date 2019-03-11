@@ -339,7 +339,7 @@
                                   <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width: 100%;">
                                     <tr>
                                       <td align="left" class="textContent">
-                                        <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Tus datos de confirmación</h3>
+                                        <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Tus datos de participación</h3>
                                         <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Nombre: </strong><?php echo $name;?><br><strong>Empresa: </strong><?php echo $company;?> <br><strong>Email: </strong> <?php echo $email;?>  <br><strong>Celular: </strong> <?php echo $phone;?> </div>
                                       </td>
                                     </tr>
@@ -421,7 +421,7 @@
                                           you to edit certain row. It makes it easy for you to quickly edit row sections.
                                           http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
                                         -->
-                                        <h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">Este es solo un mensaje de confirmación</h3>
+                                        <!--<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">Mensaje de participación en el evento</h3>-->
                                         <div mc:edit="body" style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">&copy; 2019 <a style="border-bottom:none; color:#292929;" href="https://www.digitalage.es/" target="_blank">Digital Age</a>, Todos los derechos reservados.</div>
                                       </td>
                                     </tr>
