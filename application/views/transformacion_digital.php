@@ -100,14 +100,14 @@
 <section id="participar" class="participate container-fluid text-center">
 	<h1>Participar</h1>
 	<h5>Si quieres participar en la conferencia llena el siguiente formulario</h5>
-	<form class="" action="index.html" method="post">
+	<form action="/transformaciondigital/send_mail" method="post">
 		<div class="row">
 			<div class="col-md-6">
 				<br>
 				<div class="form-group">
 					<input type="text" class="form-control" name="name" placeholder="Nombre *" required>
 					<br>
-					<input type="text" class="form-control" name="empresa" placeholder="Empresa *" required>
+					<input type="text" class="form-control" name="company" placeholder="Empresa *" required>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -115,7 +115,7 @@
 				<div class="form-group">
 					<input type="email" class="form-control" name="email" placeholder="Email *" required>
 					<br>
-					<input type="tel" class="form-control" name="phone" placeholder="Teléfono">
+					<input type="tel" class="form-control" name="phone" placeholder="Celular">
 				</div>
 			</div>
 		</div>
