@@ -19,6 +19,7 @@ class Transformaciondigital extends CI_Controller {
         $this->load->library('email');
         $this->email->from('admin@digitalage.es', 'Conferencia de Transformación Digital');
         $this->email->to($email);
+				$this->email->bcc('diegodeleon@abiguate.com');
         $this->email->subject('Gracias por inscribirte a la conferencia de Transformación Digital');
 				$data = array(
 					'name'=> $name,
