@@ -24,7 +24,7 @@ class Transformaciondigital extends CI_Controller {
 	        $this->load->library('email');
 	        $this->email->from('admin@grupo-tekton.com', 'Conferencia Think Digital');
 	        $this->email->to($email);
-					$this->email->bcc('kevinmilian.lemus@gmail.com');
+					$this->email->bcc('gobispo@abiguate.com');
 	        $this->email->subject('Gracias por inscribirte a la conferencia Think Digital');
 					$data = array(
 						'name'=> $name,
