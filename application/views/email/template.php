@@ -179,7 +179,7 @@
             Its width can be set to 100% for a color band
             that spans the width of the page.
           -->
-          <table bgcolor="#00aa4b" border="0" cellpadding="0" cellspacing="0" width="500" id="emailHeader">
+          <table bgcolor="#18213e" border="0" cellpadding="0" cellspacing="0" width="500" id="emailHeader">
 
             <!-- HEADER ROW // -->
             <tr>
@@ -261,7 +261,7 @@
                   tables centered in the emailBody table,
                   in case its width is set to 100%.
                 -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#00aa4b">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#18213e">
                   <tr>
                     <td align="center" valign="top">
                       <!-- FLEXIBLE CONTAINER // -->
@@ -286,7 +286,7 @@
                                 <td align="center" valign="top" class="textContent">
                                   <h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:25px;margin-bottom:10px;color:#fff;line-height:135%;">Hola, <?php echo $name; ?></h2>
                                   <h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">¡Tu Inscripción ha sido exitosa!</h1>
-                                  <h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#292929;line-height:135%;">Conferencia de Transformación Digital</h2>
+                                  <h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#fff;line-height:135%;">Conferencia Think Digital</h2>
                                   <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#FFFFFF;line-height:135%;">Este es un pequeño recordatorio de tu inscripción para la conferencia internacional.</div>
                                 </td>
                               </tr>
@@ -330,7 +330,7 @@
                                     <tr>
                                       <td align="left" class="textContent">
                                         <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Información de la conferencia</h3>
-                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Sábado 09.04.2019<br><strong>Horario:</strong> 16:00 a 19:00 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
+                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Miercoles 10.04.2019<br><strong>Horario:</strong> 16:00 a 19:00 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -375,7 +375,7 @@
                           <td style="padding-top:0;" align="center" valign="top" width="500" class="flexibleContainerCell">
 
                             <!-- CONTENT TABLE // -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #00aa4b;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #18213e;">
                               <tr>
                                 <td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
                                   <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=M2hrYzRucGcxOTFrajc4Z3U1MGFoamY3cTYgN2htY3BldWFnNnVkdmFpY29mbjRkb2F1aHNAZw&amp;tmsrc=7hmcpeuag6udvaicofn4doauhs%40group.calendar.google.com" target="_blank">Agregar a calendario de Google</a>
@@ -422,7 +422,7 @@
                                           http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
                                         -->
                                         <!--<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:center;">Mensaje de participación en el evento</h3>-->
-                                        <div mc:edit="body" style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">&copy; 2019 <a style="border-bottom:none; color:#292929;" href="https://www.digitalage.es/" target="_blank">Digital Age</a>, Todos los derechos reservados.</div>
+                                        <div mc:edit="body" style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">&copy; 2019 <a style="border-bottom:none; color:#292929;" href="https://www.grupo-tekton.com/" target="_blank">Grupo TEKTON</a>, Todos los derechos reservados.</div>
                                       </td>
                                     </tr>
                                   </table>

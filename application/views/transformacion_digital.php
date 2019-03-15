@@ -20,7 +20,7 @@
 <section class="info text-white">
 	<div class="row text-center">
 		<div class="col-md-4">
-			<p><i class="fa fa-calendar-check" aria-hidden="true"></i> Sábado 09.04.2019</p>
+			<p><i class="fa fa-calendar-check" aria-hidden="true"></i> Miercoles 10.04.2019</p>
 		</div>
 		<div class="col-md-4">
 			<p><i class="fa fa-clock" aria-hidden="true"></i> 16:00 a 19:00 Horas</p>

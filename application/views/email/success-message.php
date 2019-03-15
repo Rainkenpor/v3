@@ -9,7 +9,7 @@
 						<p>Serás redireccionado en unos segundos.</p>
 						<script>
 							setTimeout(function() {
-							  window.location.href = "<?php echo base_url(); ?>";
+							  window.location.href = "https://grupo-tekton.com/think-digital/";
 							}, 6000);
 						</script>
 		    	</div>

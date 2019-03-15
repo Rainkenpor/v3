@@ -5,7 +5,6 @@ class Transformaciondigital extends CI_Controller {
 
 	public function index(){
 		$this->load->view('_header');
-		$this->load->view('_toolbar');
 		$this->load->view('transformacion_digital');
 		$this->load->view('_events-footer');
 	}
@@ -15,37 +14,41 @@ class Transformaciondigital extends CI_Controller {
 		$company = $this->input->post('company');
 		$email = $this->input->post('email');
 		$phone = $this->input->post('phone');
-		//Load email library
-        $this->load->library('email');
-        $this->email->from('admin@digitalage.es', 'Conferencia de Transformación Digital');
-        $this->email->to($email);
-				$this->email->bcc('diegodeleon@abiguate.com');
-        $this->email->subject('Gracias por inscribirte a la conferencia de Transformación Digital');
-				$data = array(
-					'name'=> $name,
-					'company'=> $company,
-					'email'=> $email,
-					'phone'=> $phone
-				);
-				$body = $this->load->view('email/template',$data,TRUE);
-				$this->email->message($body);
-        /*$this->email->message(
-					'Nombre: '.$name.'<br>'.'Empresa: '.$company.'<br>'.'Email: '.$email.'<br>'.'Teléfono: '.$phone
-				);*/
-        //Send mail
-        if($this->email->send()){
-					$this->load->view('_header');
-					$this->load->view('_toolbar');
-					$this->load->view('email/success-message');
-					$this->load->view('_events-footer');
-				}
-        else{
-					$this->load->view('_header');
-					$this->load->view('_toolbar');
-					$this->load->view('email/unsuccess-message');
-					$this->load->view('_events-footer');
-				}
-
+		$code = $this->input->post('code');
+		if ($code != 'DIGITALAGE') {
+			$this->load->view('_header');
+			$this->load->view('email/unsuccess-message');
+			$this->load->view('_events-footer');
+		}else{
+			//Load email library
+	        $this->load->library('email');
+	        $this->email->from('admin@grupo-tekton.com', 'Conferencia de Transformación Digital');
+	        $this->email->to($email);
+					$this->email->bcc('kevinmilian.lemus@gmail.com');
+	        $this->email->subject('Gracias por inscribirte a la conferencia de Transformación Digital');
+					$data = array(
+						'name'=> $name,
+						'company'=> $company,
+						'email'=> $email,
+						'phone'=> $phone
+					);
+					$body = $this->load->view('email/template',$data,TRUE);
+					$this->email->message($body);
+	        /*$this->email->message(
+						'Nombre: '.$name.'<br>'.'Empresa: '.$company.'<br>'.'Email: '.$email.'<br>'.'Teléfono: '.$phone
+					);*/
+	        //Send mail
+	        if($this->email->send()){
+						$this->load->view('_header');
+						$this->load->view('email/success-message');
+						$this->load->view('_events-footer');
+					}
+	        else{
+						$this->load->view('_header');
+						$this->load->view('email/unsuccess-message');
+						$this->load->view('_events-footer');
+					}
+		}
 	}
 
 }
