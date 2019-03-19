@@ -330,7 +330,7 @@
                                     <tr>
                                       <td align="left" class="textContent">
                                         <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Información de la conferencia</h3>
-                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Miercoles 10.04.2019<br><strong>Horario:</strong> 16:00 a 19:00 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
+                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Miercoles 10.04.2019<br><strong>Horario:</strong> 16:30 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
                                       </td>
                                     </tr>
                                   </table>
