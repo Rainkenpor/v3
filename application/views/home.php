@@ -130,7 +130,7 @@ aria-hidden="true">
 									style="padding:10px;">
 									<hr>
 									<div v-for="subquestion in sub.sub_question">
-										<!-- {{subquestion}} -->
+										<!-- {{subquestion}} --> <!-- Tu negocio utiliza redes sociales -->
 										<label>{{subquestion.question}}</label>
 										<!-- texto -->
 										<input type="text" class="form-control" v-if="subquestion.type_question=='text'" v-model="subquestion.value">
