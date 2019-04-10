@@ -261,7 +261,7 @@
                   tables centered in the emailBody table,
                   in case its width is set to 100%.
                 -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#18213e">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" background="https://www.digitalage.es/source/images/events/bg-think-digital.jpg" style="color:#FFFFFF; background-size:cover;" >
                   <tr>
                     <td align="center" valign="top">
                       <!-- FLEXIBLE CONTAINER // -->
@@ -330,7 +330,7 @@
                                     <tr>
                                       <td align="left" class="textContent">
                                         <h3 style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">Información de la conferencia</h3>
-                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Miercoles 10.04.2019<br><strong>Horario:</strong> 16:30 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
+                                        <div style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;"><strong>Día:</strong> Miercoles 24.04.2019<br><strong>Horario:</strong> 16:30 Horas<br><strong>Lugar:</strong> Hotel Crown Plaza San Salvador</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -375,7 +375,7 @@
                           <td style="padding-top:0;" align="center" valign="top" width="500" class="flexibleContainerCell">
 
                             <!-- CONTENT TABLE // -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #18213e;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="50%" class="emailButton" style="background-color: #f45f10;">
                               <tr>
                                 <td align="center" valign="middle" class="buttonContent" style="padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
                                   <a style="color:#FFFFFF;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:135%;" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=M2hrYzRucGcxOTFrajc4Z3U1MGFoamY3cTYgN2htY3BldWFnNnVkdmFpY29mbjRkb2F1aHNAZw&amp;tmsrc=7hmcpeuag6udvaicofn4doauhs%40group.calendar.google.com" target="_blank">Agregar a calendario de Google</a>
